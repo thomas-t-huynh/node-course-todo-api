@@ -3,6 +3,7 @@ const request = require('supertest');
 const { ObjectID } = require('mongodb');
 const { app } = require('./../server');
 const { Todo } = require('./../models/todo');
+let { authenticate } = require('./middleware/authenticate');
 
 
 const todos =[{ 
